@@ -1,10 +1,18 @@
+body {
+    background: linear-gradient(to top, #222222, #333333);
+    background: -moz-linear-gradient(to top, #222222, #333333);  
+    background: -webkit-linear-gradient(to top, #222222, #333333);
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
 .wrapper {
     background: linear-gradient(to top, #222222, #333333);
     background: -moz-linear-gradient(to top, #222222, #333333);  
     background: -webkit-linear-gradient(to top, #222222, #333333);
     color: #ffffff;
-    height: 100vh;
     font-family: 'Lato', sans-serif;
+    height: 100vh;
 }
 
 #top-level {
