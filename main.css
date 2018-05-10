@@ -1,39 +1,43 @@
 body {
-    background: linear-gradient(to top, #222222, #333333);
-    background: -moz-linear-gradient(to top, #222222, #333333);  
-    background: -webkit-linear-gradient(to top, #222222, #333333);
+    background: black;
+    /* background: -moz-linear-gradient(to top, #222222, #333333);  
+    background: -webkit-linear-gradient(to top, #222222, #333333); */
     color: #ffffff;
     font-family: 'Lato', sans-serif;
 }
 
-.wrapper {
+/* body {
+    background-color: blue;
+} */
+
+/* .wrapper {
     background: linear-gradient(to top, #222222, #333333);
     background: -moz-linear-gradient(to top, #222222, #333333);  
     background: -webkit-linear-gradient(to top, #222222, #333333);
     color: #ffffff;
     font-family: 'Lato', sans-serif;
     height: 100vh;
-}
+} */
 
 #top-level {
     padding-top: 2%;
+    margin-bottom: 5%;
 }
 
 #logo {
     font-size: 25px;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 img {
     height: 35px;
+    margin-bottom: 50px;
 }
-
-
 
 #header-text {
     font-size: 40px;
     text-align: center;
-    padding-top: 100px;
 }
 
 #header-text-2{
@@ -52,10 +56,6 @@ img {
     color: #2F80ED;
 }
 
-#third-level {
-    margin-top: 10%;
-}
-
 .red-button {
     width: 100%;
     height: 60px;
@@ -66,6 +66,29 @@ img {
     text-align: center;
     vertical-align: middle;
     line-height: 55px;
+    margin-top: 10%;
+}
+
+#third-button {
+    margin-bottom: 5%;
+}
+
+.red-button:hover {
+    text-decoration: none;
+    color: #EB5757;
+}
+
+.red-button:active {
+    text-decoration: none;
+}
+
+.blue-button:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.blue-button:active {
+    text-decoration: none;
 }
 
 .blue-button {
@@ -77,19 +100,43 @@ img {
     vertical-align: middle;
     line-height: 55px;
     background-color: #2F80ED;
+    color: #fff;
+    margin-top: 10%;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: inherit;
-    text-decoration: none;
+/* a:hover {
+    color: inherit;  
 }
 
 a:active {
     color: inherit;
     text-decoration: none;
+} */
+
+
+@media only screen and (max-width: 992px) {
+    #logo {
+        font-size: 20px;
+    }
+
+    .red-button, .blue-button {
+        font-size: 14px;
+    }
+
+    #header-text {
+        font-size: 35px;
+    }
 }
+
+@media only screen and (max-width: 671px) {
+    .red-button, .blue-button {
+        font-size: 18px;
+    }
+}
+
+/* @media only screen and (max-width: 576px) {
+    #top-level {
+        text-align: center;
+    }
+
+} */
